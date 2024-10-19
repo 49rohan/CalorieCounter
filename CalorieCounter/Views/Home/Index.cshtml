@@ -12,7 +12,10 @@
     <p>
         @c.Name
         @c.Calories
+        <a asp-route-id="@c.Id" asp-action="Edit">Edit</a>
+        <a asp-route-id="@c.Id" asp-action="Delete">Delete</a>
     </p>
 }
 
 <a asp-action="Add">Add Food</a> 
+<a asp-action="Calculate">Calculate Calories</a> 

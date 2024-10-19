@@ -1,5 +1,9 @@
 ﻿@model Calorie;
 
+@{
+    ViewData["Title"] = "Food Form";
+}
+
 <form asp-action="Edit" method="post">
     <label asp-for="Name">Name: </label> <input type="text" asp-for="Name" />
     <label asp-for="Calories">Calories: </label> <input type="text" asp-for="Calories" />

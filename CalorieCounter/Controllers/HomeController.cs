@@ -1,6 +1,7 @@
 ﻿using CalorieCounter.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Globalization;
 
 namespace CalorieCounter.Controllers
 {
@@ -51,6 +52,22 @@ namespace CalorieCounter.Controllers
                 return View("FoodForm", c);
             }
 
+        }
+        public IActionResult Delete(int id)
+        {
+            Calorie del = context.Calories.Find(id);
+            context.Calories.Remove(del);
+            context.SaveChanges();
+            var c = context.Calories.ToList();
+            return View("Index", c);
+        }
+        public IActionResult Calculate()
+        {
+            var totalCalories = context.Calories.Sum(c => c.Calories ?? 0);
+
+            ViewBag.TotalCalories = totalCalories;
+
+            return View("CalculateCal");
         }
     }
 }
