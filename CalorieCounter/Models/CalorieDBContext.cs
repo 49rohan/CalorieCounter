@@ -18,26 +18,31 @@ namespace CalorieCounter.Models
             modelBuilder.Entity<Calorie>().HasData(
                 new Calorie
                 {
+                    Id = 1,
                     Name = "Banana",
                     Calories = 105
                 },
                 new Calorie
                 {
+                    Id = 2,
                     Name = "Apple",
                     Calories = 95
                 },
                 new Calorie
                 {
+                    Id = 3,
                     Name = "Orange",
                     Calories = 45
                 },
                 new Calorie
                 {
+                    Id = 4,
                     Name = "Big Mac",
                     Calories = 563
                 },
                 new Calorie
                 {
+                    Id = 5,
                     Name = "Takis",
                     Calories = 140
                 });
