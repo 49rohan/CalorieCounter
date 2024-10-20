@@ -1,7 +1,20 @@
 ﻿@{
     ViewData["Title"] = "Total Calories";
 }
+<div class="text-center">
+    <h2> Total Calories </h2>
+</div>
+<hr />
+<div class="text-center">
+    <p>
+        <strong>Your total calories today is: @ViewBag.TotalCalories</strong>
+    </p>
+    <p>
+        <mark>Keep in mind that these calories below are just estimates. Height also plays a part in how much calories you need per day.
+            If you really want to get a better estimate on your calorie intake, I suggest using a calorie calculator app online.
+        </mark>
+    </p>
 
-<p>
-    Your total calories today is: @ViewBag.TotalCalories
-</p>
+    <img src="https://www.healthychildren.org/SiteCollectionImages/energybalance_calories_chart.jpg"/>
+
+</div>

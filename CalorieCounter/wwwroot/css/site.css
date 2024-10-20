@@ -1,5 +1,6 @@
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
@@ -9,10 +10,20 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    font-size: 25px;
+
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url("https://i.pinimg.com/736x/19/e3/96/19e39678e2da28dd3e23da0c7d8426f9.jpg");
+
 }
+
+table {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
