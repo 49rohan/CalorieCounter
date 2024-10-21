@@ -2,16 +2,18 @@
 
 namespace CalorieCounter.Models
 {
-    public class CalorieDBContext : DbContext
+    public class CalorieDBContext : DbContext //Inherits from DbContext
     {
+        //Constructor method
         public CalorieDBContext
             (DbContextOptions<CalorieDBContext> options) :base (options) 
         {
             
         }
 
-        public DbSet<Calorie> Calories { get; set; }
+        public DbSet<Calorie> Calories { get; set; } //Creates a database
 
+        //Seed initial data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
